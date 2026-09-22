@@ -321,7 +321,7 @@ namespace StartbitV2 {
         basic.forever(() => {
             getHandleCmd();
             if (0 < currentVoltage && currentVoltage < 6800 ) {
-                music.playTone(988, music.beat(BeatFraction.Whole));                    
+                basic.showIcon(IconNames.SmallDiamond);                    
             }
         });
         basic.pause(2000);
